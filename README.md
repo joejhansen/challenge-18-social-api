@@ -14,6 +14,6 @@ Finally, run the server with `npm run start`.
 
 ## Walkthrough
 
-A walkthrough of the API's functionality [can be found here](youtube.com). <-- link TBD 
+A walkthrough of the API's functionality [can be found here](https://youtu.be/MlasK1pOdHw).
 
 You can follow along in Insomnia.
