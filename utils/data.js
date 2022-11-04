@@ -3,14 +3,14 @@
 const users = [
     { username: 'LAM05', email: 'lam0@gmail.com'},
     { username: 'ShoegazeKaraokeClub', email: 'shoegaze@aol.com'},
-    { username: 'd4b3ss', email: 'd4b3ss@aol.com'},
+    { username: 'd4b3ss', email: 'd4b3ss@5minuteemail.com'},
     { username: 'king_bungus', email: 'bungus@hotmail.com'},
     { username: 'V0ltTackle', email: 'v0lttackle@somedomain.org'},
     { username: 'ryanrodgerz', email: 'ryan@rodgerz.biz'},
-    { username: 'okn556', email: 'okn556@gmail.com'},
+    { username: 'okn556', email: 'okn556@qwerty.com'},
     { username: 'notnerdofalltrades', email: 'notnerdofalltrades@yahoo.com'},
     { username: 'redditkilled4chan', email: 'whatadumbusername@us.gov'},
-    { username: 'that_one-dude', email: 'that@dude.com'},
+    { username: 'that_one-dude', email: 'that@dude.net'},
 ]
 
 const thoughts = [
