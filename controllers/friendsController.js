@@ -7,6 +7,8 @@ module.exports = {
             { $addToSet: { friends: req.body.friendId } },
             { runValidators: true, new: true }
         )
+            .populate('friends')
+            .populate('thoughts')
             .then((user) => {
                 user
                     ? res.status(200).json(user)
@@ -20,7 +22,7 @@ module.exports = {
     deleteFriend(req, res) {
         User.findOneAndUpdate(
             { _id: req.params.userId },
-            { $pull: { friends: { userId: req.params.friendId } } },
+            { $pull: { friends: { $in: req.params.friendId } } },
             { runValidators: true, new: true }
         )
             .then((user) => {

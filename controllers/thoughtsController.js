@@ -10,9 +10,9 @@ module.exports = {
         })
     },
     getSingleThought(req, res) {
-        Thought.findOne({ _id: req.params.userId })
+        Thought.findOne({ _id: req.params.thoughtId })
             .select('-__v')
-            .populate('user')
+            // .populate('user')
             .then((thought) => {
                 thought
                     ? res.status(200).json(thought)
@@ -41,7 +41,7 @@ module.exports = {
     },
     updateThought(req, res) {
         Thought.findOneAndUpdate(
-            { _id: req.params.userId },
+            { _id: req.params.thoughtId },
             { $set: req.body },
             { runValidators: true, new: true }
         ).then((updatedThought) => {
@@ -51,7 +51,7 @@ module.exports = {
         })
     },
     deleteThought(req, res) {
-        Thought.findOneAndDelete({ _id: req.params.userId })
+        Thought.findOneAndDelete({ _id: req.params.thoughtId })
             .then((thought) => {
                 thought
                     ? res.status(200).json({ message: "Thought and associated reactions deleted" })
